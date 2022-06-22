@@ -1,0 +1,123 @@
+
+
+body{
+    background: linear-gradient(-45deg,
+    #303641, #ed563b);
+    overflow-x: hidden;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.container {
+    background: #fff;
+    width: 540px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 2px 5px 20 px
+    rgba(119, 119,119,.5);
+    border-radius: 5px;
+}
+.leftbox {
+    float: left;
+    top: -5%;
+    left: 5%;
+    position: absolute;
+    width: 15%;
+    height: 110%;
+    background: #ed563b;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
+    border: .1em solid #fff;
+    border-radius: 5px;
+}
+nav a {
+    list-style: none;
+    padding: 35px;
+    color: #fff;
+    font-size: 1.1em;
+    display: block;
+    transition: all .3s esse-in-out;
+}
+nav a:hover {
+    color: #ed563b;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+nav a:fisrt-child {
+    margin-top: 7px;
+}
+nav a.active {
+    color: #ed563b;
+}
+
+.rightbox {
+    width: 60%;
+    margin-left: 27%;
+    padding-top: 5px;
+
+}
+.tabShow {
+    transition: all .5s ease-in;
+    width: 80%;
+    position: absolute;
+}
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: #ed563b;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+h2{
+    color: #303641;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+.input, p{
+    border: o;
+    border-bottom: 1px solid #ed563b;
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    font-size: .8em;
+    padding: 7px 0;
+    color: #070707;
+    outline: none;
+    border-radius: 5px;
+}
+span{
+    font-size: .7em;
+    color: #303641;
+}
+.btn{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background: #ed563b;
+    padding: 7px 56px;
+    box-shadow: 0px 2px 4px 0px
+    rgba(0,0,0,.2);
+    cursor: pointer;
+    margin-top: 15px;
+}

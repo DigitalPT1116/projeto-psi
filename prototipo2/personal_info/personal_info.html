@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>User Settings Page</title>
+    <link rel="stylesheet" href="personal_info.css">
+    <link rel="stylesheet"
+    href="fontawesome/css/all.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="leftbox">
+            <nav> 
+                <a onclick="tabs(0)"
+                class="tab active"></a>
+                    <i class="fa fa-user"></i>
+                </a>
+            </nav>
+        </div>
+        
+        <div class="rightbox">
+            <div class="profile tabShow">
+            <h1>Personal Info</h1>   
+            <h2>Full name</h2> 
+            <input type="text"
+            class="input" value="<?= $row['fullname'];?>">
+            <h2>Username</h2> 
+            <input type="text"
+            class="input" value="<?= $row['username'];?>">
+            <h2>Email</h2> 
+            <input type="text"
+            class="input" value="<?= $row['email'];?>">
+            <h2>Password</h2> 
+            <input type="password"
+            class="input" value="<?= $row['password'];?>">
+            <button 
+            class="btn">Update</button>
+            <button 
+            class="btn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+</body></html>

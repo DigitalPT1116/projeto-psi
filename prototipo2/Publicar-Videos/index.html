@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Publicar videos</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="title">
+      Publicar video
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>Título do vídeo</label>
+          <input type="text" class="input">
+       </div>  
+       <div class="inputfield">
+       <label for="video">Insere o url do video:</label>
+        <input class="input" type="url" id="video" name="video" accept="video/*">
+        </div>
+        <div class="inputfield">
+            <p>Tags:</p>
+              <div class="custom_select">
+                <div>
+                  <input type="checkbox" id="scales" name="gym" checked>
+                  <label for="horns">Ginásio</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="scales" name="outside">
+                  <label for="horns">Fora de casa</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="scales" name="backs">
+                  <label for="horns">Costas</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="scales" name="front">
+                  <label for="horns">Parte da frente</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="scales" name="les">
+                  <label for="horns">Pernas</label>
+                </div>
+                
+                <div>
+                  <input type="checkbox" id="scales" name="arms">
+                  <label for="horns">Braços</label>
+                </div>
+            </div>
+       </div> 
+       <br><br><br><br><br>
+       
+
+      <div class="inputfield">
+          <label>Insere a descrição:</label>
+          <textarea class="textarea"></textarea>
+       </div> 
+     
+      <div class="inputfield">
+        <input type="submit" value="Registar" class="btn">
+        <input type="submit" value="Cancelar" class="btn">
+
+      </div>
+
+
+    </div>
+</div>	
+	
+</body>
+</html>
